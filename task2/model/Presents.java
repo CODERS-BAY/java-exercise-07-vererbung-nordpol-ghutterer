@@ -1,9 +1,21 @@
 package model;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Presents {
 
-	public Presents() {
-		// TODO Auto-generated constructor stub
-	}
+    String present = "";
 
+    public Presents(String present) {
+        this.present = present;
+    }
+
+
+    @Override
+    public String toString() {
+        return "Presents{" +
+                "present='" + present + '\'' +
+                '}';
+    }
 }

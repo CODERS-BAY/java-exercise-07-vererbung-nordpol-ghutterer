@@ -1,9 +1,25 @@
 package model;
 
-public class Child {
+import java.util.ArrayList;
+import java.util.List;
 
-	public Child() {
-		// TODO Auto-generated constructor stub
-	}
+public class Child extends Person {
+    Presents present;
+
+    public Child(String name, int age, String placeOfResidence) {
+        super(name, age, placeOfResidence);
+    }
+
+
+    @Override
+    public String toString() {
+        return "Child{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", placeOfResidence='" + placeOfResidence + '\'' +
+                '}';
+    }
+
 
 }
+
